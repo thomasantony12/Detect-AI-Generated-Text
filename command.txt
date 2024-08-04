@@ -1,0 +1,11 @@
+Create a enviornment: 
+	python -m venv D:\Detect-AI-Generated-Text\venv
+
+Activate env:
+	& ./venv/Scripts/activate
+
+Add dependencies:
+	pip3 freeze > requirements.txt
+
+install a kernel to env:
+	python -m ipykernel install --user --name AiTextDetection
