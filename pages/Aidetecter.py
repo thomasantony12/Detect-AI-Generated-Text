@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 
+
 # Load the trained model and vectorizer
 model = joblib.load('./Model/Jupyter files/ai_text_detector.pkl')
 vectorizer = joblib.load('./Model/Jupyter files/vectorizer.pkl')
@@ -16,6 +17,8 @@ def predict_text_type(text):
     result = 'AI-generated' if prediction[0] == 1 else 'Human-written'
     return result
 
+if st.button("LogOut"):
+    st.switch_page("./login.py")
 st.title("Ai Text Detection")
 st.subheader("Enter your desired text", divider=True)
 in_text = st.text_area(label="")
