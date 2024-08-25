@@ -3,8 +3,8 @@ import joblib
 
 
 # Load the trained model and vectorizer
-model = joblib.load('./Model/Jupyter files/ai_text_detector.pkl')
-vectorizer = joblib.load('./Model/Jupyter files/vectorizer.pkl')
+model = joblib.load('./Model/Jupyter files/models/ai_text_detector.pkl')
+vectorizer = joblib.load('./Model/Jupyter files/models/vectorizer.pkl')
 
 def predict_text_type(text):
     # Transform the text using the vectorizer
